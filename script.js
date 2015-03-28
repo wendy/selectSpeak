@@ -3,7 +3,9 @@
   var msg = new SpeechSynthesisUtterance();
   document.body.onmouseup = function(){
     getSelText();
-    window.speechSynthesis.speak(msg);
+    if(msg.text !== ""){
+      window.speechSynthesis.speak(msg);   
+    }
   }
   function getSelText(){
     var txt = '';
