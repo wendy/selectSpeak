@@ -1,7 +1,7 @@
 (function(){
   var node = document.createElement('script');
   node.src = 'http://responsivevoice.org/responsivevoice/responsivevoice.js';
-  document.body.appendChild(node);
+  document.head.appendChild(node);
   document.body.onmouseup = function(){
     getSelText();
   }
